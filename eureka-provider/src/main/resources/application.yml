@@ -1,0 +1,15 @@
+# 服务名称
+spring:
+  application:
+    name: eureka-provider
+# 服务端口号
+server:
+  port: 20000
+#Eureka 相关配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
+
