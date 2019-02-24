@@ -5,7 +5,7 @@
 	<groupId>cn.notemi</groupId>
 	<artifactId>eureka-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eureka-server</name>
+	<name>eureka-provider</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
