@@ -1,0 +1,20 @@
+# 服务名称
+spring:
+  application:
+    name: eureka-resitory-instance
+# 服务端口号
+server:
+  port: 20001
+#Eureka 相关配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
+    # 配置使用主机名注册服务
+    hostname: node1
+    # 优先使用IP地址方式进行注册服务
+    prefer-ip-address: true
+    # 配置使用指定IP
+    ip-address: 127.0.0.1
